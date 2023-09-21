@@ -1,8 +1,8 @@
 namespace Caching.Abstractions.Models;
 
-public interface ICacheKey
+public interface ICacheEntryKey
 {
-    ScopeType ScopeType { get; }
+    string ScopeKey { get; }
 
     string CacheKey { get; }
 }

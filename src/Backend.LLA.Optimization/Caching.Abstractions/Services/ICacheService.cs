@@ -10,11 +10,11 @@ public interface ICacheService
     /// <summary>
     /// Gets a value for a given key from cache
     /// </summary>
-    /// <param name="cacheKy">Cache key for value</param>
+    /// <param name="cacheKey">Cache key for value</param>
     /// <typeparam name="TKey">Cache key type</typeparam>
     /// <typeparam name="TValue">Cache value type</typeparam>
     /// <returns>Value if found, otherwise null</returns>
-    TValue? GetCacheValue<TKey, TValue>(TKey cacheKy) where TKey : ICacheKey;
+    TValue? GetCacheValue<TKey, TValue>(TKey cacheKey) where TKey : ICacheEntryKey;
 
     /// <summary>
     /// Sets a value for a given key in cache
@@ -23,5 +23,5 @@ public interface ICacheService
     /// <param name="value">Cache value to set</param>
     /// <typeparam name="TKey">Cache key type</typeparam>
     /// <typeparam name="TValue">Cache value type</typeparam>
-    void SetCacheValue<TKey, TValue>(TKey cacheKey, TValue value) where TKey : ICacheKey;
+    void SetCacheValue<TKey, TValue>(TKey cacheKey, TValue value) where TKey : ICacheEntryKey;
 }

@@ -1,4 +1,6 @@
-﻿namespace Caching.Abstractions.Services;
+﻿using Caching.Abstractions.Models;
+
+namespace Caching.Abstractions.Services;
 
 /// <summary>
 /// Defines cache service contract
@@ -12,7 +14,7 @@ public interface ICacheService
     /// <typeparam name="TKey">Cache key type</typeparam>
     /// <typeparam name="TValue">Cache value type</typeparam>
     /// <returns>Value if found, otherwise null</returns>
-    TValue? GetCacheValue<TKey, TValue>(TKey cacheKy);
+    TValue? GetCacheValue<TKey, TValue>(TKey cacheKy) where TKey : ICacheKey;
 
     /// <summary>
     /// Sets a value for a given key in cache
@@ -21,5 +23,5 @@ public interface ICacheService
     /// <param name="value">Cache value to set</param>
     /// <typeparam name="TKey">Cache key type</typeparam>
     /// <typeparam name="TValue">Cache value type</typeparam>
-    void SetCacheValue<TKey, TValue>(TKey cacheKey, TValue value);
+    void SetCacheValue<TKey, TValue>(TKey cacheKey, TValue value) where TKey : ICacheKey;
 }

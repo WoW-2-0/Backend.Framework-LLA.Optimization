@@ -4,13 +4,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{6F9F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caching.Abstractions", "Caching.Abstractions\Caching.Abstractions.csproj", "{0BD17064-ED6A-4F00-9A72-3C231138F4A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemoryCache", "InMemoryCache", "{81264FC6-3739-4FA1-80AE-0C246836B977}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MemoryCache", "MemoryCache", "{8D823E49-A44B-466C-8489-74903A02EC8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstractions", "Abstractions", "{B09CC6DD-27C1-400B-9F20-28CCD9EDC6BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0BD17064-ED6A-4F00-9A72-3C231138F4A2} = {6F9F821C-3F7A-4916-B4B2-21586D71344F}
+		{81264FC6-3739-4FA1-80AE-0C246836B977} = {6F9F821C-3F7A-4916-B4B2-21586D71344F}
+		{8D823E49-A44B-466C-8489-74903A02EC8A} = {6F9F821C-3F7A-4916-B4B2-21586D71344F}
+		{B09CC6DD-27C1-400B-9F20-28CCD9EDC6BE} = {6F9F821C-3F7A-4916-B4B2-21586D71344F}
+		{0BD17064-ED6A-4F00-9A72-3C231138F4A2} = {B09CC6DD-27C1-400B-9F20-28CCD9EDC6BE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0BD17064-ED6A-4F00-9A72-3C231138F4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
